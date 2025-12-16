@@ -6,7 +6,6 @@ body {
 
 .logo{
     scale: .9;
-    float:left;
     margin-top:5px; 
     margin-left:5px;
 }
@@ -22,7 +21,6 @@ body {
     border-bottom-right-radius: 20px;
     padding: 5px;
     box-shadow: 0 2px 4px rgb(187, 187, 187);
-    color: white;
     display: flex;
     justify-content: center;
 }
@@ -33,6 +31,11 @@ body {
     font-size: 16px;
     margin-top: 8px;
     padding: 8px 14px;
+}
+
+.drop-item {
+    position: relative;
+    display: inline-block;
 }
 
 .drop-btn {
@@ -46,15 +49,16 @@ body {
     -webkit-text-stroke-color: #ffffff;
     -webkit-text-stroke-width: 0.1px;
     cursor: pointer;
-    color: rgb(222, 174, 91);
+    color: rgb(255, 255, 255);
 }
 
 .drop-content{
   display: none;
   position: absolute;
   background: black;
+  border-radius: 10px;
   min-width: 150px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
 
 .drop-content > a {
@@ -64,7 +68,7 @@ body {
   color: white;
 }
 
-.drop-menu:hover .drop-content {
+.drop-item:hover .drop-content {
   display: block;
 }
 
@@ -75,7 +79,6 @@ button {
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     scale: .9;
@@ -83,7 +86,6 @@ button {
     cursor: pointer;
     border-radius: 18px;
 }
-
 button:hover {
     background-color: #ebebeb;
 }
@@ -109,12 +111,10 @@ img{
 }
 
 .crate-img-text{
-    flex-direction: column;
     margin-top: 100px;
     margin-left: 30px; 
     font-weight: lighter;
 }
-
 .icons:hover {
     transform: scale(0.95);
     box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
@@ -165,12 +165,6 @@ p {
     color: #dddddd;
    }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #222222;
-    margin-top: 20px;
-    margin-bottom: 10px;
-   }
-
 a {
     color: white;
     text-decoration: none;
@@ -184,8 +178,9 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
     }
-
 .loginbox {
     width: 320px;
     height: 420px;
@@ -207,10 +202,9 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     opacity: 1;
 }
-
-.logindetails {
-    width: 100%;
-    padding: 10px;
+.bg {
+    background-image: url('https://i.pinimg.com/1200x/22/cd/f3/22cdf3ca98a2c3a5299ef37034358dbe.jpg'); 
+    background-size: cover;
     margin: 5px 0 15px 0;
     border: none;
     border-bottom: 2px solid #ffffff;
@@ -228,19 +222,12 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     cursor: pointer;
     border-radius: 18px;
-    display: block;       /* makes it behave like a block */
-    margin: 0 auto;    /* auto left + right = centered */
+    margin: 0 auto;
 }
-
-.loginbutton:hover {
-    background-color: #ebebeb;
-}
-
 .logintext {
     color: #ffffff;
     font-size: 14px;
