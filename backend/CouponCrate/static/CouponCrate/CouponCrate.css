@@ -1,0 +1,239 @@
+body {
+   background-color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+.logo{
+    scale: .9;
+    margin-top:5px; 
+    margin-left:5px;
+}
+
+.nav-bar {
+    position: fixed;
+    gap: 113px;
+    top: 0;
+    left: 350px;
+    width: 800px;
+    height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+.drop-menu {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 8px 14px;
+}
+
+.drop-item {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-btn {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.drop-btn:hover {
+    text-shadow: 0 0 10px #ffffff;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 0.1px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.drop-content{
+  display: none;
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.drop-content > a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.drop-item:hover .drop-content {
+  display: block;
+}
+
+
+button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    scale: .9;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+button:hover {
+    background-color: #ebebeb;
+}
+
+footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 5px;
+      box-shadow: 0 -2px 4px rgb(187, 187, 187);
+}
+
+img{
+    border-radius: 15px;
+}
+
+.crate-img{
+    display: flex;
+}
+
+.crate-img-text{
+    margin-top: 100px;
+    margin-left: 30px; 
+    font-weight: lighter;
+}
+.icons:hover {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+}
+
+.anim {
+    animation: grayPulse 4s infinite ease-in-out, shadowPulse 4s infinite ease-in-out, scalePulse 4s infinite ease-in-out;
+}
+
+@keyframes grayPulse {
+    0% {
+        filter: grayscale(30%);
+    }
+    50% {
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: grayscale(30%);
+    }
+}
+
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 2px 2px 12px white;
+    }
+    100% {
+        box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes scalePulse{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+   }
+
+p {
+    font-size: 16px;
+    color: #dddddd;
+   }
+
+a {
+    color: white;
+    text-decoration: none;
+   }
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 0 0 12px #ffffff;
+   }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: #000000;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0px 12px rgb(187, 187, 187);
+
+}
+
+.bg {
+    background-image: url('https://i.pinimg.com/1200x/22/cd/f3/22cdf3ca98a2c3a5299ef37034358dbe.jpg'); 
+    background-size: cover;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(187, 187, 187);
+    font-size: 16px;
+}
+
+.loginbutton {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 18px;
+    margin: 0 auto;
+}
+
+.logintext {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logindetails {
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+    padding: 7px;
+    width: 100%;
+}
