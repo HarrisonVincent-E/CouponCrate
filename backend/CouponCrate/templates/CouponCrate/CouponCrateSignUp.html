@@ -1,5 +1,4 @@
 {% load static %}
-{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,8 +15,12 @@
             <h1 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
             Arial, sans-serif ">Welcome!</h1>
             <br>
-            <form action="{% provider_login_url 'google' %}" method="get">
-                <button type="submit" class="login-btn">Sign in with Google</button>
+            <form action="{% url 'successful' %}">
+                <input type="Email" name="" placeholder="Email Address" required class="logindetails"><br><br>
+                <input type="Password" name="" placeholder="Password" required class="logindetails"><br><br>
+                <input type="Submit" name="" value="Login" class="loginbutton"><br>
+                <a class="logintext" href="#">Forgot Password?</a>
+                <a class="logintext" href="CouponCrateSignUp.html">Don't have an account?</a>
             </form>
         </div>
     </body>
