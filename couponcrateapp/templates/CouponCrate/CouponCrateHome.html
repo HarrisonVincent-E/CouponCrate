@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CouponCrate</title>
+        <link rel="stylesheet" href="{% static 'CouponCrate/CouponCrate.css' %}">
+        <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/1383837060/vector/dollar-coin-icon-with-long-shadow-on-blank-background-flat-design.jpg?s=612x612&w=0&k=20&c=HufIHBIxbEC2Y-hwga9mYjTibFzbzggZsMIQOMQTdZc="></link>
+    </head>
+
+
+    <body>
+        <div class="nav-bar">
+            <div class="logo">
+            <a href="CouponCrateHome.html">
+            <img  class= "icons" src = "https://media.istockphoto.com/id/1383837060/vector/dollar-coin-icon-with-long-shadow-on-blank-background-flat-design.jpg?s=612x612&w=0&k=20&c=HufIHBIxbEC2Y-hwga9mYjTibFzbzggZsMIQOMQTdZc=" 
+            href="CouponCrateHome.html" alt="Glowing Treasure Chest" width="40" height="40">
+            </a>
+            </div>
+            <div class="drop-menu">
+                <div class="drop-item">
+                    <span class="drop-btn">Home</span>
+                    <div class="drop-content">
+                        <a href="CouponCrate.html">Main Page</a>
+                        <a href="CouponCrateLogin.html">Login</a>
+                        <a href="CouponCrateSignUp.html">Sign Up</a>
+                    </div>
+                </div>
+                <div class="drop-item">
+                <span class="drop-btn">Domains</span>
+                    <div class="drop-content">
+                        <a href="CouponCrate.html">Main Page</a>
+                        <a href="CouponCrateLogin.html">Login</a>
+                        <a href="CouponCrateSignUp.html">Sign Up</a>
+                    </div>
+                </div>
+                <div class="drop-item">
+                <span class="drop-btn">About Us</span>
+                    <div class="drop-content">
+                        <a href="CouponCrate.html">Main Page</a>
+                        <a href="CouponCrateLogin.html">Login</a>
+                        <a href="CouponCrateSignUp.html">Sign Up</a>
+                    </div>
+                </div>
+                <div class="drop-item">
+                <span class="drop-btn">Our Community</span> 
+                    <div class="drop-content">
+                        <a href="CouponCrate.html">Main Page</a>
+                        <a href="CouponCrateLogin.html">Login</a>
+                        <a href="CouponCrateSignUp.html">Sign Up</a>                        
+                    </div>  
+                </div>
+            </div>
+            <a href="{% url 'login' %}"><button style="margin-left: auto">Login</button></a>
+        </div>
+
+
+        <div class="crate-img">
+            <div  class="crate-img-text">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 style="font-size: 110px; margin-left: 100px;">Coupons</h1>
+                <h1 style="font-size: 90px; margin-left: 100px;">made easy.</h1>
+                <h2 style="margin-left: 120px; font-family:Arial, Helvetica, sans-serif; font-weight:lighter"> Find the best deals all in one place!</h2>
+            </div>
+        <img class="anim" src="https://t3.ftcdn.net/jpg/06/28/58/06/360_F_628580663_t2uz5WvK7kDYQGkIcBZpVfVNPGPX0Tb0.jpg" 
+        alt="Coupon Crate" style="margin-top: 150px; margin-left: auto; scale:1.15;">
+        </div>
+
+
+        <footer>
+        <p  style="text-align: center; padding-left: 600px; padding-right: 600px;">&copy; CouponCrate. All rights reserved.</p>
+    </footer>
+    </body>
+</html>
