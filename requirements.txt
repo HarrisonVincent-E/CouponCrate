@@ -1,0 +1,9 @@
+Django==4.2.7
+django-allauth==0.61.1
+requests==2.31.0
+
+# WSGI/serving (optional but typical for Django projects)
+gunicorn==21.2.0
+
+# For managing environment variables (if you add a .env-based setup)
+python-dotenv==1.0.1
